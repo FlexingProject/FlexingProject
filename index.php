@@ -5,9 +5,6 @@
         $pass = $_SESSION["LOG"]["Senha"];
         $mail = $_SESSION["LOG"]["Login"];
 
-    
-
-        
     } else {
         header('Location: login.php');
     }

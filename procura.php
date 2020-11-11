@@ -2,7 +2,7 @@
 include_once("base.php");
 ?><br>
 <form action="procura.php" method="post" enctype="multipart/form-data">
-    Nome:  <input type="text" name="username" value="" placeholder="" size="20">
+    Adcione um amigo:  <input type="text" name="username" value="" placeholder="" size="20">
     <input type="submit" value="Search" name="submit">
 </form>
 
@@ -36,6 +36,61 @@ echo   '<meta charset="utf-8">';
 echo   '<link href="perfil.css" rel="stylesheet"><script src="perfil.js" type="text/javascript"></script></head><body>
 <title >Flexing</title>   <link href="perfil.css" rel="stylesheet">
             <script src="perfil.js" type="text/javascript"></script>
+
+
+<style>
+  .att{
+
+    text-align: center;
+
+  }
+  
+.info {
+  background-color: #0707ab;
+  width: 600px;
+  border:  10px solid royalblue;
+  border-radius: 10px;
+  margin: 0;
+  background: #0707ab;
+  position: relative;
+  top: 15%;
+  left: 25%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
+  }
+  .info-r {
+  background-color: #0707ab;
+  width: 600px;
+  border:  10px solid royalblue;
+  border-radius: 10px;
+  margin: 0;
+  background: #0707ab;
+  position: relative;
+  top: 15%;
+  left: 90%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
+  }
+
+body{
+  color: #ffffff;
+}
+
+h2{
+  color: #ffffff;
+}  
+h3{
+  color: white;
+  padding: 10px;
+}
+h4{
+  padding:10px;
+}
+
+
+</style>
 
           </head>
           
@@ -80,46 +135,27 @@ echo   '<link href="perfil.css" rel="stylesheet"><script src="perfil.js" type="t
 
         <div class="container">
          
-          <div class="left">
-          </div>
           
-              <div class="about">
+              <div class="info">
                 <h2 class="pro-info">Metas</h2>
                 <hr>
                 
                 <h2>'.$row["metas"].'<h2>
 
           </div>
+                        <div class="info-r">
+                <h2 class="pro-info">Atividades Favoritas</h2>
+                <hr>
+                
+                <h2>'.$row["atv"].'<h2>
 
-             <div class="user-posts">
-              <a href="#""><h2>POSTS</h2></a>
-               
-               <div class="user-image-post">
-                 
-                 <img class="user-post" src="https://www.w3schools.com/howto/img_avatar.png"></img>
-           <div class="overlay">
-            <div class="text">Hello World</div>
           </div>
-               </div>
-               
-                <div class="view-followers aligncenter">
-              <a href="#">View Posts</a>
-            </div>
-          </div>
-        </div>
+
+             
         </body>
         </html>
 ';
 
-        
-                echo '<table>';
-                echo '<tr><td>ID:</td><td>'.$row["id"].'</td></tr>';
-                echo '<tr><td>Avatar:</td><td><img src="'.$row["avatar"].'" width="100px" /></td></tr>';
-                echo '<tr><td>Firstname:</td><td>'.$row["username"].'</td></tr>';
-                echo '<tr><td>Metas:</td><td>'.$row["metas"].'</td></tr>';
-                echo '<tr><td>Atividade Favorita:</td><td>'.$row["atv"].'</td></tr>';
-                echo '</table>';
-                echo '<hr />';
             }
         }
         else {

@@ -348,6 +348,24 @@ button.btn-signup:hover, button.btn-signin:hover {
     transition: background-color .5s; 
 }
 
+a{
+  left: 10px;
+}
+
+a:link, a:visited {
+  text-decoration: none
+  color: #ffffff;
+
+  }
+a:hover {
+  text-decoration: none; 
+  color: #ffffff;
+  }
+a:active {
+  text-decoration: none
+  color: #ffffff;
+  }
+
 .forgot {
   height: 100px;
   width: 80%;
@@ -430,6 +448,7 @@ button.btn-signup:hover, button.btn-signin:hover {
 }
 
 h1 {
+
   color: #ffffff;
   font-size: 20px;
   font-weight: 300;
@@ -519,71 +538,14 @@ a.btn-goback:hover {
     	<div ng-app ng-init="checked = false">
     		<h2>Bem vindo ao Flexing</h2>
     <form class="form-signin" action="db/entrar.php" method="post">
-       <label for="mail"> EMAIL:</label> <input class="form-styling" type=email required="required" name=mail><br>
-       <label for="password"> SENHA:</label> <input class="form-styling" type=password required="required" name=senha><br>
-      <a href=""><button class="btn-signin">Logar</button></a><br><br>
-      <h1 class="message">Ainda não tem uma conta ? <a href="registro.php">Clique aqui</a></h1>
+       <label for="mail"> EMAIL:</label> <input class="form-styling" type=email required="required" name=mail style="max-width: 290px"><br>
+       <label for="password"> SENHA:</label> <input class="form-styling" type=password required="required" name=senha style="max-width: 290px"><br>
+      <button class="btn-signin"style="max-width: 290px">Logar</button><br><br>
+      <label for="mail">Ainda não tem uma conta ?<a href="registro.php"> Clique aqui</h1></label>
     </form>
   </div>
 </div>
 </div>
-
-<!--<div class="container">
-  <div class="frame">
-    <div class="nav">
-      <ul class="links">
-        <li class="signin-active"><a class="btn">Login</a></li>
-        <li class="signup-inactive"><a class="btn">Cadastre-se</a></li>
-      </ul>
-    </div>
-<br><br>
-    <div ng-app ng-init="checked = false">
-		<form class="form-signin" action="db/entrar.php" method="post" name="form">
-          <label for="mail">Email</label>
-          <input type=email class="form-styling" required="required" type="text" name="main" placeholder=""/>
-          <label for="senha">Senha</label>
-          <input class="form-styling" type=password required="required" name="senha" placeholder=""/>
-          <div class="btn-animate">
-            <a class="btn-signin">Login</a>
-          </div>
-				        </form>
-        
-				        <form class="form-signup" action="" method="post" name="form">
-          <label for="fullname">Nome completo</label>
-          <input class="form-styling" type="text" required="required" name="fullname" placeholder=""/>
-          <label for="email">Email</label>
-          <input class="form-styling" type="text"required="required" name="email" placeholder=""/>
-          <label for="password">Senha</label>
-          <input class="form-styling" type="text" name="password" placeholder=""/>
-          <label for="confirmpassword">Confirme a senha</label>
-          <input class="form-styling" type="text" name="confirmpassword" placeholder=""/>
-          <a ng-click="checked = !checked" class="btn-signup">Cadastre-se</a>
-				        </form>
-      
-            <div  class="success">
-              <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 60 60" id="check" ng-class="checked ? 'checked' : ''">
-                 <path fill="#ffffff"  />
-                <div class="successtext">
-                   <p> Obrigado pelo cadastro! Verifique seu a confirmação no seu email.</p>
-                </div>
-             </div>
-      </div>
-      
-      <div class="forgot">
-        <a href="#">Esqueceu sua senha?</a>
-      </div>
-      
-  </div>
-    
-  <a id="refresh" value="Refresh" onClick="history.go()">
-    <svg class="refreshicon"   version="1.1" id="Capa_1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="25px" height="25px" viewBox="0 0 322.447 322.447" style="enable-background:new 0 0 322.447 322.447;"
-         xml:space="preserve">
-         <path/>
-    </svg>
-  </a>
-</div>-->
 
 
 </html>

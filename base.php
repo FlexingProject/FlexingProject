@@ -42,7 +42,8 @@
             <a href="info.php">Info</a>
             <a href="premium.php">Premium</a>
             <a href="https://www.instagram.com/flexing_projeto/">Instagram</a>
-            <a href="https://www.instagram.com/flexing_projeto/">Twitter</a></li>
+            <a href="https://www.instagram.com/flexing_projeto/">Twitter</a>
+            <a href="db/logout.php">Logout</a></li>
           
 
 

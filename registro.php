@@ -507,7 +507,7 @@ a.btn-goback:hover {
     <div class="nav">
     	<div ng-app ng-init="checked = false">
     		<h2>Bem vindo ao Flexing</h2>
-    <form class="form-signin" action="db/registrar.php" method="post">
+          <form class="form-signin" action="db/registrar.php" method="post">
          <label for="username"> user:</label><input class="form-styling" type=text required="required" name=campo1><br>
         <label for="mail"> EMAIL:</label> <input class="form-styling" type=email required="required" name=campo2><br>
         <label for="password"> SENHA:</label><input class="form-styling" type=password required="required" name=campo3><br>
